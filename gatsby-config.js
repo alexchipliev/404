@@ -6,7 +6,11 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Заметки 404 - Блог`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `Заметки 404`,
+    // Twitter Handle
+    author: `@alexchipliev`,
   },
   plugins: [
     {
@@ -15,22 +19,26 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
+            title: `Блог`,
             slug: `/blog`,
           },
           {
-            title: `About`,
+            title: `О сайте`,
             slug: `/about`,
+          },
+          {
+            title: `Контакты`,
+            slug: `/contact`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Facebook`,
+            url: `https://facebook.com/alex.chipliev`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Telegram`,
+            url: `https://t.me/cgalex`,
           },
         ],
       },
@@ -68,7 +76,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
-    shouldAnalyseBundle && {
+      shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
         analyzerMode: `static`,
