@@ -6,11 +6,12 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Заметки 404 - Блог`,
+    siteTitleAlt: `Заметки 404`,
     // Used for the title template on pages other than the index site
     siteTitle: `Заметки 404`,
     // Twitter Handle
     author: `@alexchipliev`,
+    siteImage: `/JAM.jpg`,
   },
   plugins: [
     {
