@@ -20,16 +20,20 @@ module.exports = {
       options: {
         navigation: [
           {
+            title: `Главная`,
+            slug: `/`,
+          },
+          {
             title: `Блог`,
             slug: `/blog`,
           },
           {
-            title: `О сайте`,
-            slug: `/about`,
+            title: `Тэги`,
+            slug: `/tags`,
           },
           {
-            title: `Контакты`,
-            slug: `/contact`,
+            title: `О сайте`,
+            slug: `/about`,
           },
         ],
         externalLinks: [
@@ -56,7 +60,7 @@ module.exports = {
       options: {
         name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
         short_name: `minimal-blog`,
-        description: `Привет! Это мой блог. Здесь я пишу на разные темы, в том числе о разработке сайтов, веб-технологиях, программировании и о многом другом! Блог работает в офлайне, так что ты можешь читать статьи даже если у тебя отключится Интернет :)`,
+        description: `Здесь я пишу на разные темы, в том числе о разработке сайтов, веб-технологиях, программировании и о многом другом! Блог работает в офлайне, так что ты можешь читать статьи даже если у тебя отключится Интернет :)`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
