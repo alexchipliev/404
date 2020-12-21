@@ -34,7 +34,7 @@ const Tag = ({ posts, pageContext }: TagProps) => {
 
   return (
     <Layout>
-      <SEO title={`Tag: ${pageContext.name}`} />
+      <SEO title={`Тэг: ${pageContext.name}`} />
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap` }}>
         <Heading as="h1" variant="styles.h1" sx={{ marginY: 2 }}>
           {pageContext.name}
@@ -44,7 +44,7 @@ const Tag = ({ posts, pageContext }: TagProps) => {
           sx={{ variant: `links.secondary`, marginY: 2 }}
           to={replaceSlashes(`/${basePath}/${tagsPath}`)}
         >
-          View all tags
+          Показать все тэги
         </TLink>
       </Flex>
       <Listing posts={posts} sx={{ mt: [4, 5] }} />
